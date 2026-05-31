@@ -307,7 +307,7 @@
 /* Hero v2 — all text in one centered block */
 .hero-center {
   position: absolute;
-  top: 5%;
+  top: 0%;
   left: 0;
   right: 0;
   width: 100%;

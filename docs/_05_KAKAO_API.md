@@ -27,7 +27,7 @@
 ## Step 3. JavaScript 키 복사
 
 1. "앱" 대시보드 → "플랫폼 키" 섹션
-2. **JavaScript 키** 복사 (예: `a37c725b11400c9f5bfea1a5aa64bf79` 형태의 32자리 문자열)
+2. **JavaScript 키** 복사 (예: `a...` 형태의 32자리 문자열)
 
 
 ---
@@ -40,7 +40,20 @@
 2. 점 3개 아이콘의 "수정" 클릭
 3. 아래 두 도메인을 추가:
    - 로컬 개발용: `http://localhost:3000`
-   - 실제 배포 주소: `https://woori202609191430.github.io`
+   - 실제 배포 주소: `https://keirahrlee.github.io`
+     ※ 레포명(`woori202609191430.github.io`)이 아닌 **계정명**(`keirahrlee.github.io`) 도메인임에 주의
+
+---
+
+## Step 4-2. 카카오맵 제품 활성화 (필수! 많이 놓치는 단계)
+
+도메인 등록만으로는 부족합니다. **카카오맵 API 자체를 앱에서 켜야** 합니다.
+
+1. 좌측 메뉴 → **"제품 설정"** → **"카카오맵"** 클릭
+2. **"사용 설정"** 항목에서 토글을 **ON**으로 변경
+3. 저장
+
+> 이 단계를 빠뜨리면 sdk.js 요청에 **403 Forbidden** 에러가 발생하며 지도가 표시되지 않습니다.
 
 ---
 
@@ -50,7 +63,7 @@
 
 1. "앱" 대시보드 → "플랫폼 키" 섹션 → "JavaScript 키" 섹션 클릭
 2. 점 3개 아이콘의 "수정" 클릭
-2. "카카오 로그인 리다이렉트 URI"에 배포 주소 추가: `https://woori202609191430.github.io`
+2. "카카오 로그인 리다이렉트 URI"에 배포 주소 추가: `https://keirahrlee.github.io`
 
 ---
 
@@ -60,7 +73,7 @@
 
 ```js
 // 기존
-export const KAKAO_API_KEY = 'a37c725b11400c9f5bfea1a5aa64bf79';
+export const KAKAO_API_KEY = '이전 API 키';
 
 // 내 키로 교체
 export const KAKAO_API_KEY = '여기에_내_JavaScript_키_붙여넣기';
@@ -72,11 +85,14 @@ export const KAKAO_API_KEY = '여기에_내_JavaScript_키_붙여넣기';
 ## 카카오 지도가 안 보일 때 확인 목록
 
 1. `config.js`의 API 키가 내 것인지 확인
-2. 카카오 개발자 콘솔 → 플랫폼 → Web → 사이트 도메인에 아래가 있는지 확인
+2. 카카오 개발자 콘솔 → **"제품 설정" → "카카오맵" → 사용 설정 ON** 확인 ← 가장 많이 놓치는 단계
+3. 카카오 개발자 콘솔 → 플랫폼 키 → JavaScript 키 → 도메인에 아래가 있는지 확인
    - 로컬: `http://localhost:3000`
-   - 배포: `https://woori202609191430.github.io`
-3. 개발 서버가 **3000번 포트**로 실행 중인지 확인 (`npm run dev`)
-4. 브라우저 개발자 도구(F12) → Console 탭에서 에러 메시지 확인
+   - 배포: `https://keirahrlee.github.io` (레포명이 아닌 계정명 도메인)
+4. 개발 서버가 **3000번 포트**로 실행 중인지 확인 (`npm run dev`)
+5. 브라우저 개발자 도구(F12) → Network 탭에서 `sdk.js` 요청이 200인지 확인
+   - 403이면 → 2번(제품 활성화) 또는 3번(도메인 등록) 문제
+   - 요청 자체가 없으면 → 코드 문제
 
 ---
 

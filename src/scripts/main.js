@@ -36,10 +36,27 @@ async function init() {
   // Kakao SDK
   initKakaoSDK();
 
-  // Kakao Map
+  // Kakao Map — scroll-reveal 전환 완료 후 초기화 (opacity:0+transform 상태에서는 타일 렌더 실패)
   try {
     await loadKakaoMapScript();
-    initKakaoMap();
+    const mapEl = document.getElementById('kakao-map');
+    const revealEl = mapEl?.closest('.scroll-reveal');
+
+    if (!revealEl) {
+      initKakaoMap();
+    } else if (revealEl.classList.contains('visible')) {
+      // loadKakaoMapScript() 대기 중에 이미 visible이 된 경우 — 전환 완료 간주
+      initKakaoMap();
+    } else {
+      // visible 클래스가 붙을 때까지 대기 후 전환 시간(700ms) 경과 뒤 초기화
+      const mo = new MutationObserver(() => {
+        if (revealEl.classList.contains('visible')) {
+          mo.disconnect();
+          setTimeout(() => initKakaoMap(), 700);
+        }
+      });
+      mo.observe(revealEl, { attributes: true, attributeFilter: ['class'] });
+    }
   } catch (error) {
     console.error('Map init failed:', error);
   }

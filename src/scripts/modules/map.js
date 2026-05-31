@@ -2,29 +2,22 @@
  * Map functionality
  */
 
-import { KAKAO_API_KEY, VENUE } from './config.js';
+import { VENUE } from './config.js';
 
 /**
- * Load Kakao Maps API
+ * Kakao Maps API 가용성 확인
+ * 스크립트는 </body> 직전에 동기 로드 — main.js 실행 시점에 window.kakao.maps 보장
  */
 export function loadKakaoMapScript() {
   return new Promise((resolve, reject) => {
     if (window.kakao?.maps) {
+      console.log('✅ Kakao Maps API ready');
       resolve();
       return;
     }
-
-    const script = document.createElement('script');
-    script.type = 'text/javascript';
-    script.src = `//dapi.kakao.com/v2/maps/sdk.js?appkey=${KAKAO_API_KEY}&autoload=false&libraries=services`;
-
-    script.onload = () => {
-      console.log('✅ Kakao Maps API loaded');
-      kakao.maps.load(resolve);
-    };
-
-    script.onerror = () => reject(new Error('Failed to load Kakao Maps'));
-    document.head.appendChild(script);
+    reject(new Error(
+      'window.kakao.maps 없음 — 카카오 개발자 콘솔에서 도메인 등록 확인: http://localhost:3000'
+    ));
   });
 }
 
@@ -43,7 +36,7 @@ export function initKakaoMap() {
 
   const map = new kakao.maps.Map(container, {
     center: new kakao.maps.LatLng(37.5665, 126.9780),
-    level: 7,
+    level: 4, //(1=최대 확대, 14=최대 축소)
     draggable: true,
     scrollwheel: true,
     disableDoubleClickZoom: false,
@@ -66,6 +59,7 @@ export function initKakaoMap() {
       fallbackAddressSearch(map);
     }
   });
+
 }
 
 /**

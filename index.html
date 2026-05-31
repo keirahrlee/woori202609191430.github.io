@@ -126,7 +126,7 @@
     <section>
         <!-- 일시 타이틀 제거 -->
         <p class="wedding-date-text scroll-reveal">9월</p>
-        <p class="wedding-time-text scroll-reveal delay-1">토요일 오후 2시 30분 I홀</p>
+        <p class="wedding-time-text scroll-reveal delay-1">토요일 오후 2시 30분, I홀</p>
         <div class="calendar-container scroll-reveal delay-2">
             <table class="calendar">
                 <thead>
@@ -166,8 +166,8 @@
                         <td>16</td>
                         <td>17</td>
                         <td>18</td>
-                        <!-- <td class="saturday wedding-day">19<span class="wedding-day-note">두시 반, I홀</span></td> -->
-                        <td class="saturday wedding-day">19</td>
+                        <td class="saturday wedding-day">19<span class="wedding-day-note">I홀, 두시 반</span></td>
+                        <!-- <td class="saturday wedding-day">19</td> -->
                     </tr>
                     <tr>
                         <td class="sunday">20</td>
@@ -403,6 +403,10 @@
             Made by Hyeri and Wooseok with love
         </p>
     </section>
+
+    <!-- Kakao Maps API — referrerpolicy 명시로 Referer 헤더 강제 전송 -->
+    <script src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=ed53df22dd36a6c9d3e71cf2dab304fa&libraries=services"
+            referrerpolicy="unsafe-url"></script>
 
     <!-- Vite will process this module -->
     <script type="module" src="/src/scripts/main.js"></script>

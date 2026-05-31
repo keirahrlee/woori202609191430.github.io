@@ -18,9 +18,12 @@ import { initScrollReveal } from './modules/scroll-reveal.js';
  * Initialize application
  */
 async function init() {
-  // Inject background images from config
-  document.documentElement.style.setProperty('--hero-bg-url', `url('${HERO_IMAGE}')`);
-  document.documentElement.style.setProperty('--footer-bg-url', `url('${FOOTER_IMAGE}')`);
+  // Inject background images as absolute URLs.
+  // CSS custom properties are resolved against the CSS file (assets/), not the document root,
+  // so relative paths break on GitHub Pages subpath deployments.
+  const pageBase = window.location.origin + window.location.pathname.replace(/[^/]*$/, '');
+  document.documentElement.style.setProperty('--hero-bg-url', `url('${pageBase}${HERO_IMAGE}')`);
+  document.documentElement.style.setProperty('--footer-bg-url', `url('${pageBase}${FOOTER_IMAGE}')`);
 
   // UI setup
   fixHeroHeight();

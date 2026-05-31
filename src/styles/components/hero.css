@@ -197,7 +197,7 @@
   content: '';
   position: absolute;
   inset: 0;
-  background-image: url('/images/wedding/optimized/full/IMG_4261.webp');
+  background-image: var(--hero-bg-url);
   background-position: 35% center;
   background-attachment: scroll;
   pointer-events: none;
@@ -302,6 +302,46 @@
 
 .location {
   margin-bottom: 0;
+}
+
+/* Hero v2 — all text in one centered block */
+.hero-center {
+  position: absolute;
+  top: 9%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 2;
+  color: var(--white);
+  padding: 0 1rem;
+}
+
+.hero-center .subtitle {
+  animation: fadeInUp 1s ease-out forwards;
+  text-shadow:
+    0 2px 8px rgba(0, 0, 0, 0.55),
+    0 0 24px rgba(0, 0, 0, 0.3);
+}
+
+.hero-center .subtitle-kr {
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
+}
+
+.hero-center .names {
+  transform: none;
+  margin-top: 0.6rem;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.55);
+}
+
+.hero-center .date-location {
+  transform: none;
+  margin: 0.2rem auto 0;
+}
+
+.hero-center .date,
+.hero-center .location {
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
 }
 
 /* Music Toggle */

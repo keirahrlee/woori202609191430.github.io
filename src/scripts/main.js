@@ -4,7 +4,8 @@
  */
 
 // Import modules
-import { loadKakaoMapScript, initKakaoMap, openKakaoMap, openNaverMap, openTmap, openKakaoNavi } from './modules/map.js';
+import { loadKakaoMapScript, initKakaoMap, openKakaoMap, openNaverMap, openTmap } from './modules/map.js';
+import { HERO_IMAGE, FOOTER_IMAGE } from './modules/config.js';
 import { initKakaoSDK, shareKakao } from './modules/share.js';
 import { initGallery } from './modules/gallery.js';
 import { copyAddress, copyAddressWithIcon, copyAccount } from './modules/clipboard.js';
@@ -17,6 +18,10 @@ import { initScrollReveal } from './modules/scroll-reveal.js';
  * Initialize application
  */
 async function init() {
+  // Inject background images from config
+  document.documentElement.style.setProperty('--hero-bg-url', `url('${HERO_IMAGE}')`);
+  document.documentElement.style.setProperty('--footer-bg-url', `url('${FOOTER_IMAGE}')`);
+
   // UI setup
   fixHeroHeight();
   initDdayCounter();
@@ -133,11 +138,6 @@ function setupEventListeners() {
     e.preventDefault();
     openTmap();
   });
-  document.querySelector('[data-nav="kakao-navi"]')?.addEventListener('click', (e) => {
-    e.preventDefault();
-    openKakaoNavi();
-  });
-
   // Account copy buttons
   document.querySelectorAll('[data-account]').forEach((btn) => {
     btn.addEventListener('click', () => {
@@ -158,7 +158,6 @@ window.copyAccount = copyAccount;
 window.openKakaoMap = openKakaoMap;
 window.openNaverMap = openNaverMap;
 window.openTmap = openTmap;
-window.openKakaoNavi = openKakaoNavi;
 window.shareKakao = shareKakao;
 window.openContactModal = contactModal.open;
 window.closeContactModal = contactModal.close;

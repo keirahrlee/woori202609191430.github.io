@@ -109,21 +109,18 @@ function tryOpenApp(scheme, webUrl) {
  * Navigation app openers
  */
 export function openKakaoMap() {
-  const url = 'https://map.kakao.com/?urlX=507877.9999999988&urlY=1106363.0000000016&urlLevel=3&itemId=10660163&q=%EC%97%98%ED%83%80%EC%9B%8C&map_type=TYPE_MAP';
+  const url = `https://map.kakao.com/?itemId=${VENUE.kakaoPlaceId}`;
   window.open(url, '_blank');
 }
 
 export function openNaverMap() {
-  const scheme = `nmap://place?lat=${VENUE.latitude}&lng=${VENUE.longitude}&name=${encodeURIComponent('엘타워')}&appname=com.wedding.invitation`;
-  tryOpenApp(scheme, 'https://naver.me/GOPeWn3P');
+  const scheme = `nmap://place?lat=${VENUE.latitude}&lng=${VENUE.longitude}&name=${encodeURIComponent(VENUE.name)}&appname=com.wedding.invitation`;
+  const webUrl = `https://map.naver.com/v5/search/${encodeURIComponent(VENUE.address)}`;
+  tryOpenApp(scheme, webUrl);
 }
 
 export function openTmap() {
-  const scheme = `tmap://?rGoName=${encodeURIComponent('엘타워 주차장')}&rGoX=${VENUE.longitude}&rGoY=${VENUE.latitude}`;
-  tryOpenApp(scheme, 'https://www.tmap.co.kr');
-}
-
-export function openKakaoNavi() {
-  const scheme = `kakaonavi://navigate?name=${encodeURIComponent('엘타워')}&x=${VENUE.longitude}&y=${VENUE.latitude}&coord_type=wgs84`;
-  tryOpenApp(scheme, 'https://kakaonavi.kakao.com/');
+  const scheme = `tmap://route?goalname=${encodeURIComponent(VENUE.name)}&goalx=${VENUE.longitude}&goaly=${VENUE.latitude}`;
+  const webUrl = `https://map.naver.com/v5/search/${encodeURIComponent(VENUE.address)}`;
+  tryOpenApp(scheme, webUrl);
 }

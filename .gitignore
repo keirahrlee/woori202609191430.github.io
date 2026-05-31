@@ -113,3 +113,6 @@ public/images/wedding/*.HEIC
 # Generated hero variants (not used in this project)
 public/images/hero/hero-desktop.*
 public/images/hero/hero-mobile.*
+
+# Personal memo
+memo.md

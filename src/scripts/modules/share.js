@@ -2,7 +2,7 @@
  * Sharing functionality
  */
 
-import { KAKAO_API_KEY, WEDDING } from './config.js';
+import { KAKAO_API_KEY, SHARE_IMAGE } from './config.js';
 
 /**
  * Initialize Kakao SDK
@@ -30,13 +30,13 @@ export function shareKakao() {
 
   const currentUrl = window.location.href;
   const baseUrl = window.location.origin + window.location.pathname.replace(/\/index\.html$/, '');
-  const imageUrl = `${baseUrl}/images/share_v3.jpg`;
+  const imageUrl = `${baseUrl}${SHARE_IMAGE}`;
 
   Kakao.Share.sendDefault({
     objectType: 'feed',
     content: {
-      title: '창범♥하영 결혼합니다',
-      description: '2026.05.23(토) 11:30',
+      title: '우석♥혜리 결혼합니다',
+      description: '2026.09.19(토) 14:30',
       imageUrl,
       link: { mobileWebUrl: currentUrl, webUrl: currentUrl },
     },

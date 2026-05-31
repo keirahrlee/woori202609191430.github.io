@@ -15,7 +15,7 @@ footer::before {
   content: '';
   position: absolute;
   inset: 0;
-  background-image: url('/images/wedding/optimized/full/IMG_4265.webp');
+  background-image: var(--footer-bg-url);
   background-size: cover;
   background-position: 70% 30%;
   background-repeat: no-repeat;

@@ -2,24 +2,24 @@
  * Configuration and constants
  */
 
-export const KAKAO_API_KEY = 'a37c725b11400c9f5bfea1a5aa64bf79';
+export const KAKAO_API_KEY = 'ed53df22dd36a6c9d3e71cf2dab304fa';
 
 export const VENUE = {
-  name: '엘타워 7층 그랜드홀',
-  address: '서울 서초구 강남대로 213 엘타워',
-  keyword: '엘타워',
-  latitude: 37.4827711,
-  longitude: 127.034966,
-  kakaoPlaceId: '10660163',
+  name: '수원 WI 컨벤션센터 - I홀',
+  address: '경기 수원시 팔달구 월드컵로 310 수원월드컵경기장',
+  keyword: 'WI컨벤션 I홀',
+  latitude: 37.284240,
+  longitude: 127.039871,
+  kakaoPlaceId: '27446151',
 };
 
 export const WEDDING = {
-  bride: '박하영',
-  groom: '천창범',
-  date: '2026.05.23 (토) 11:30',
-  dateObj: new Date('2026-05-23T11:30:00'),
-  venue: '엘타워 7층 그랜드홀',
-  address: '서울 서초구 강남대로 213 엘타워',
+  bride: '이혜리',
+  groom: '이우석',
+  date: '2026.09.19 (토) 14:30',
+  dateObj: new Date('2026-09-19T14:30:00'),
+  venue: '수원 WI컨벤션 센터 - I홀',
+  address: '경기 수원시 팔달구 월드컵로 310 수원월드컵경기장',
 };
 
 export const GALLERY_ITEMS = [
@@ -45,6 +45,10 @@ export const GALLERY_ITEMS = [
   { full: '/images/wedding/optimized/full/IMG_4276.webp', thumb: '/images/wedding/optimized/thumb/IMG_4276.webp' },
   { full: '/images/wedding/optimized/full/IMG_4277.webp', thumb: '/images/wedding/optimized/thumb/IMG_4277.webp' },
 ];
+
+export const HERO_IMAGE = '/images/hero/hero-1-web.webp';
+export const FOOTER_IMAGE = '/images/wedding/optimized/full/last.webp';
+export const SHARE_IMAGE = '/images/share_v1_squoosh.jpg';
 
 export const ICONS = {
   mute: '/images/utils/mute.png',

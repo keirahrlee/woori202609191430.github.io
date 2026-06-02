@@ -142,8 +142,7 @@
   font-weight: 600;
 }
 
-/* Contact Button Container */
-.contact-btn-container {
-  margin-top: 2rem;
-  text-align: center;
+/* Contact section header — separation from photos above */
+.contact-title {
+  margin-top: 7rem;
 }

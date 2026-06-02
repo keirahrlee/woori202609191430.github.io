@@ -123,8 +123,10 @@ function initHeroPetals() {
  * Setup all event listeners (replacing inline onclick handlers)
  */
 function setupEventListeners() {
-  // Contact modal
-  document.querySelector('[data-action="open-contact"]')?.addEventListener('click', contactModal.open);
+  // Contact modal buttons
+  document.querySelectorAll('[data-action="open-contact"]').forEach((btn) => {
+    btn.addEventListener('click', () => contactModal.open(btn.dataset.side));
+  });
 
   // Gift modal buttons
   document.querySelectorAll('[data-action="open-gift"]').forEach((btn) => {

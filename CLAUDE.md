@@ -20,7 +20,7 @@
 - [x] `config.js` — 예식장 이름, 주소, 좌표, 카카오플레이스 ID
 - [x] `config.js` — 신랑·신부 이름
 - [x] `config.js` — 결혼식 날짜·시간
-- [ ] `config.js` — 갤러리 이미지 목록 (파일명)
+- [x] `config.js` — 갤러리 이미지 목록 (파일명)
 - [x] `index.html` — head 태그 OG 타이틀·설명
 - [x] `index.html` — Hero 섹션 이름·날짜·예식장
 - [x] `index.html` — 초대장 섹션 부모님 정보
@@ -33,8 +33,8 @@
 
 ### 사진
 - [x] `public/images/hero/` — 히어로 배경 이미지
-- [ ] `public/images/wedding/optimized/full/` — 갤러리 고화질 (WebP)
-- [ ] `public/images/wedding/optimized/thumb/` — 갤러리 썸네일 (WebP)
+- [x] `public/images/wedding/optimized/full/` — 갤러리 고화질 (WebP)
+- [x] `public/images/wedding/optimized/thumb/` — 갤러리 썸네일 (WebP)
 - [x] `public/images/share_v1_squoosh.jpg` — 카카오톡 공유 이미지
 - [x] `index.html` og:image — OG 이미지 경로
 

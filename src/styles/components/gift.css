@@ -44,12 +44,29 @@
   }
 }
 
+.gift-note {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  line-height: 1.9;
+  text-align: center;
+  margin-bottom: 1.2rem;
+  word-break: keep-all;
+}
+
 .gift-buttons {
   display: flex;
   gap: 1rem;
   justify-content: center;
   align-items: center;
   margin-top: -1.5rem;
+}
+
+.gift-section .gift-buttons {
+  margin-top: 0;
+}
+
+.gift-section .invitation {
+  padding-top: 1.2rem;
 }
 
 .gift-container {

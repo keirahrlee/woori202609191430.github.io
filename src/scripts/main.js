@@ -10,7 +10,7 @@ import { initKakaoSDK, shareKakao } from './modules/share.js';
 import { initGallery } from './modules/gallery.js';
 import { copyAddress, copyAddressWithIcon, copyAccount } from './modules/clipboard.js';
 import { contactModal, giftModal } from './modules/modal.js';
-import { initMusic, toggleMusic } from './modules/music.js';
+// import { initMusic, toggleMusic } from './modules/music.js'; // 배경음악 비활성화
 import { fixHeroHeight, initDdayCounter, logWelcome } from './modules/utils.js';
 import { initScrollReveal } from './modules/scroll-reveal.js';
 
@@ -30,7 +30,7 @@ async function init() {
   initDdayCounter();
   initGallery();
   initScrollReveal();
-  initMusic();
+  // initMusic(); // 배경음악 비활성화
   initHeroPetals();
 
   // Kakao SDK
@@ -123,9 +123,6 @@ function initHeroPetals() {
  * Setup all event listeners (replacing inline onclick handlers)
  */
 function setupEventListeners() {
-  // Music toggle
-  document.getElementById('musicToggle')?.addEventListener('click', toggleMusic);
-
   // Contact modal
   document.querySelector('[data-action="open-contact"]')?.addEventListener('click', contactModal.open);
 
@@ -171,7 +168,6 @@ function setupEventListeners() {
 }
 
 // Expose to global scope for any remaining inline handlers during transition
-window.toggleMusic = toggleMusic;
 window.copyAddress = copyAddress;
 window.copyAddressWithIcon = copyAddressWithIcon;
 window.copyAccount = copyAccount;

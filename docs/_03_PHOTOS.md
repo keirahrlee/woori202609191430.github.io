@@ -90,7 +90,7 @@ export const GALLERY_ITEMS = [
 
 카카오톡으로 청첩장을 공유할 때 미리보기로 표시되는 이미지입니다.
 
-**현재 파일**: `public/images/share_v1_squoosh.jpg`
+**현재 파일**: `public/images/_share.jpg`
 
 ### 규격
 - 크기: **800×1200px** (세로형)
@@ -138,8 +138,8 @@ localhost로는 불가합니다.
 |------|-----------|---------|
 | 신랑 사진 (초대장 섹션) | `IMG_4264.webp` | `index.html` |
 | 신부 사진 (초대장 섹션) | `IMG_4260.webp` | `index.html` |
-| D-day 섹션 사진 | `dday.webp` | `index.html` |
-| 푸터 배경 사진 ("두 사람이 걸어온 길처럼...") | `last.webp` | `src/scripts/modules/config.js` |
+| D-day 섹션 사진 | `_dday.webp` | `index.html` |
+| 푸터 배경 사진 ("두 사람이 걸어온 길처럼...") | `_last.webp` | `src/scripts/modules/config.js` |
 
 새 파일로 교체 후 위 수정 위치에서 해당 파일명을 새 파일명으로 수정합니다.
 

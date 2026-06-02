@@ -35,7 +35,7 @@
 - [x] `public/images/hero/` — 히어로 배경 이미지
 - [x] `public/images/wedding/optimized/full/` — 갤러리 고화질 (WebP)
 - [x] `public/images/wedding/optimized/thumb/` — 갤러리 썸네일 (WebP)
-- [x] `public/images/share_v1_squoosh.jpg` — 카카오톡 공유 이미지
+- [x] `public/images/_share.jpg` — 카카오톡 공유 이미지
 - [x] `index.html` og:image — OG 이미지 경로
 
 ### 웹 디자인

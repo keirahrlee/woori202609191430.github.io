@@ -17,7 +17,7 @@ footer::before {
   inset: 0;
   background-image: var(--footer-bg-url);
   background-size: cover;
-  background-position: 70% 30%;
+  background-position: 70% 100%;
   background-repeat: no-repeat;
   z-index: 0;
   -webkit-mask-image: linear-gradient(to bottom, transparent 0%, #000 12%, #000 88%, transparent 100%);

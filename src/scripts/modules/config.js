@@ -31,7 +31,7 @@ export const GALLERY_ITEMS = [
   { full: 'images/wedding/optimized/full/6.webp', thumb: 'images/wedding/optimized/thumb/6.webp' },
   { full: 'images/wedding/optimized/full/7.webp', thumb: 'images/wedding/optimized/thumb/7.webp' },
   { full: 'images/wedding/optimized/full/8_.webp', thumb: 'images/wedding/optimized/thumb/8_.webp' },
-  { full: 'images/wedding/optimized/full/9.webp', thumb: 'images/wedding/optimized/thumb/9.webp' },
+  { full: 'images/wedding/optimized/full/9_.webp', thumb: 'images/wedding/optimized/thumb/9_.webp' },
   { full: 'images/wedding/optimized/full/10.webp', thumb: 'images/wedding/optimized/thumb/10.webp' },
   { full: 'images/wedding/optimized/full/11.webp', thumb: 'images/wedding/optimized/thumb/11.webp' },
   { full: 'images/wedding/optimized/full/12.webp', thumb: 'images/wedding/optimized/thumb/12.webp' },
@@ -40,7 +40,7 @@ export const GALLERY_ITEMS = [
   { full: 'images/wedding/optimized/full/15.webp', thumb: 'images/wedding/optimized/thumb/15.webp' },
   { full: 'images/wedding/optimized/full/16_.webp', thumb: 'images/wedding/optimized/thumb/16_.webp' },
   { full: 'images/wedding/optimized/full/17.webp', thumb: 'images/wedding/optimized/thumb/17.webp' },
-  { full: 'images/wedding/optimized/full/17._.webp', thumb: 'images/wedding/optimized/thumb/17._.webp' },
+  { full: 'images/wedding/optimized/full/17_.webp', thumb: 'images/wedding/optimized/thumb/17_.webp' },
   { full: 'images/wedding/optimized/full/18.webp', thumb: 'images/wedding/optimized/thumb/18.webp' },
   { full: 'images/wedding/optimized/full/19.webp', thumb: 'images/wedding/optimized/thumb/19.webp' },
   { full: 'images/wedding/optimized/full/20.webp', thumb: 'images/wedding/optimized/thumb/20.webp' },
@@ -57,8 +57,8 @@ export const GALLERY_ITEMS = [
 ];
 
 export const HERO_IMAGE = 'images/hero/hero-1-web.webp';
-export const FOOTER_IMAGE = 'images/wedding/optimized/full/last.webp';
-export const SHARE_IMAGE = 'images/share_v1_squoosh.jpg';
+export const FOOTER_IMAGE = 'images/wedding/optimized/full/_last.webp';
+export const SHARE_IMAGE = 'images/_share.jpg';
 
 export const ICONS = {
   mute: 'images/utils/mute.png',

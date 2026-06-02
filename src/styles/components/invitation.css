@@ -15,7 +15,7 @@
   line-height: 2;
 }
 
-..invitation p {
+.invitation p {
   font-size: 1rem;
   color: var(--text-secondary);
   margin-bottom: 1.5rem;
@@ -46,6 +46,10 @@
   object-fit: cover;
   border-radius: 14px;
   display: block;
+}
+
+.invitation-couple-item--groom img {
+  object-position: center 0%;
 }
 
 /* Caption overlay on image */

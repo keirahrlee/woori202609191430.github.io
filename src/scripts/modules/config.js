@@ -30,7 +30,7 @@ export const GALLERY_ITEMS = [
   { full: 'images/wedding/optimized/full/5.webp', thumb: 'images/wedding/optimized/thumb/5.webp' },
   { full: 'images/wedding/optimized/full/6.webp', thumb: 'images/wedding/optimized/thumb/6.webp' },
   { full: 'images/wedding/optimized/full/7.webp', thumb: 'images/wedding/optimized/thumb/7.webp' },
-  { full: 'images/wedding/optimized/full/8_.webp', thumb: 'images/wedding/optimized/thumb/8_.webp' },
+  // { full: 'images/wedding/optimized/full/8__.webp', thumb: 'images/wedding/optimized/thumb/8__.webp' },
   { full: 'images/wedding/optimized/full/9_.webp', thumb: 'images/wedding/optimized/thumb/9_.webp' },
   { full: 'images/wedding/optimized/full/10.webp', thumb: 'images/wedding/optimized/thumb/10.webp' },
   { full: 'images/wedding/optimized/full/11.webp', thumb: 'images/wedding/optimized/thumb/11.webp' },

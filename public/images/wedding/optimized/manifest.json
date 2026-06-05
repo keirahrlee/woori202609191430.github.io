@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-02T15:20:26.288Z",
+  "generatedAt": "2026-06-05T11:29:45.475Z",
   "inputDir": "/public/images/wedding",
   "outputBase": "/public/images/wedding/optimized",
   "fullMaxWidth": 1600,
@@ -10,13 +10,22 @@
   },
   "items": [
     {
+      "full": "/images/wedding/optimized/full/_dday.webp",
+      "thumb": "/images/wedding/optimized/thumb/_dday.webp",
+      "width": 5152,
+      "height": 7728,
+      "bytesIn": 25863718,
+      "bytesFull": 69418,
+      "bytesThumb": 9736
+    },
+    {
       "full": "/images/wedding/optimized/full/_personal_1.webp",
       "thumb": "/images/wedding/optimized/thumb/_personal_1.webp",
       "width": 5146,
       "height": 6670,
-      "bytesIn": 13246744,
-      "bytesFull": 218810,
-      "bytesThumb": 26352
+      "bytesIn": 25018784,
+      "bytesFull": 191948,
+      "bytesThumb": 25152
     },
     {
       "full": "/images/wedding/optimized/full/_personal_2.webp",
@@ -185,9 +194,9 @@
       "thumb": "/images/wedding/optimized/thumb/23_.webp",
       "width": 6864,
       "height": 5152,
-      "bytesIn": 15210330,
-      "bytesFull": 99818,
-      "bytesThumb": 11796
+      "bytesIn": 26196698,
+      "bytesFull": 99998,
+      "bytesThumb": 11740
     },
     {
       "full": "/images/wedding/optimized/full/24_.webp",
@@ -212,9 +221,9 @@
       "thumb": "/images/wedding/optimized/thumb/26_.webp",
       "width": 5152,
       "height": 7728,
-      "bytesIn": 21541007,
-      "bytesFull": 171254,
-      "bytesThumb": 23266
+      "bytesIn": 36644637,
+      "bytesFull": 171942,
+      "bytesThumb": 23220
     },
     {
       "full": "/images/wedding/optimized/full/27.webp",
@@ -228,11 +237,11 @@
     {
       "full": "/images/wedding/optimized/full/28_.webp",
       "thumb": "/images/wedding/optimized/thumb/28_.webp",
-      "width": 7728,
-      "height": 5152,
-      "bytesIn": 20157656,
-      "bytesFull": 170412,
-      "bytesThumb": 29764
+      "width": 5098,
+      "height": 8231,
+      "bytesIn": 26139268,
+      "bytesFull": 179004,
+      "bytesThumb": 30468
     },
     {
       "full": "/images/wedding/optimized/full/29.webp",
@@ -298,8 +307,8 @@
       "bytesThumb": 22046
     },
     {
-      "full": "/images/wedding/optimized/full/8_.webp",
-      "thumb": "/images/wedding/optimized/thumb/8_.webp",
+      "full": "/images/wedding/optimized/full/8__.webp",
+      "thumb": "/images/wedding/optimized/thumb/8__.webp",
       "width": 7728,
       "height": 5152,
       "bytesIn": 24927383,

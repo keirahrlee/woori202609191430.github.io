@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-05T11:29:45.475Z",
+  "generatedAt": "2026-06-06T13:56:04.091Z",
   "inputDir": "/public/images/wedding",
   "outputBase": "/public/images/wedding/optimized",
   "fullMaxWidth": 1600,
@@ -44,6 +44,15 @@
       "bytesIn": 14075989,
       "bytesFull": 397478,
       "bytesThumb": 40900
+    },
+    {
+      "full": "/images/wedding/optimized/full/0.webp",
+      "thumb": "/images/wedding/optimized/thumb/0.webp",
+      "width": 3024,
+      "height": 4032,
+      "bytesIn": 2710214,
+      "bytesFull": 354122,
+      "bytesThumb": 42270
     },
     {
       "full": "/images/wedding/optimized/full/1.webp",

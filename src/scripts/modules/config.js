@@ -23,6 +23,7 @@ export const WEDDING = {
 };
 
 export const GALLERY_ITEMS = [
+  { full: 'images/wedding/optimized/full/0.webp', thumb: 'images/wedding/optimized/thumb/0.webp' },
   { full: 'images/wedding/optimized/full/1.webp', thumb: 'images/wedding/optimized/thumb/1.webp' },
   { full: 'images/wedding/optimized/full/2.webp', thumb: 'images/wedding/optimized/thumb/2.webp' },
   { full: 'images/wedding/optimized/full/3.webp', thumb: 'images/wedding/optimized/thumb/3.webp' },

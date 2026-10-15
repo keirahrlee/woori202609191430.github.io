@@ -129,6 +129,17 @@ npm run build
 # dist/ 폴더를 웹 서버에 업로드
 ```
 
+## 🔒 청첩장 내리기 (사이트 비공개)
+
+더 이상 주소로 청첩장을 볼 수 없게 하려면 **GitHub 저장소 설정**에서 처리합니다. 카카오 개발자 콘솔이나 코드는 수정할 필요가 없습니다.
+
+1. Settings > Pages > **⋯ → Unpublish site**
+2. Actions 탭 > 배포 워크플로 > **⋯ → Disable workflow** (push 시 재배포 방지)
+3. (선택) Settings > General > Danger Zone > **Make private** — 계좌번호·연락처가 담긴 코드도 비공개
+4. (선택) [카카오 공유 디버거](https://developers.kakao.com/tool/debugger/sharing)에서 링크 미리보기 캐시 초기화
+
+자세한 방법: [docs/_07_UNPUBLISH.md](docs/_07_UNPUBLISH.md)
+
 ## 📄 라이선스
 
 MIT License

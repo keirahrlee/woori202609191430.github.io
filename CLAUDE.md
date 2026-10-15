@@ -44,6 +44,11 @@
 - [ ] `public/music/bgm.mp3` — 배경음악 교체 (선택)
 - [ ] `src/scripts/main.js` — 꽃잎 애니메이션 설정 (선택)
 
+### 운영
+- [x] `docs/_07_UNPUBLISH.md`, `README.md` — 청첩장 내리기(사이트 비공개) 방법 문서화
+- [x] GitHub Settings → Pages → Unpublish site (2026-10-15 완료, 접속 불가 확인)
+- [x] Actions → Deploy 워크플로 Disable (push 시 재배포 방지)
+
 ---
 
 ## 프로젝트 개요
@@ -289,3 +294,4 @@ node tools/optimize-wedding-images.mjs
 | [_04_DESIGN.md](docs/_04_DESIGN.md) | 색상·폰트·배경음악·애니메이션 변경 방법 |
 | [_05_KAKAO_API.md](docs/_05_KAKAO_API.md) | 카카오 API 키 발급 및 교체, 도메인 등록 방법 |
 | [_06_DEPLOY.md](docs/_06_DEPLOY.md) | GitHub Pages 배포 설정, GitHub Actions 확인 방법 |
+| [_07_UNPUBLISH.md](docs/_07_UNPUBLISH.md) | 청첩장 내리기 — Pages 게시 중단, 저장소 비공개, 카카오 미리보기 캐시 초기화 |
